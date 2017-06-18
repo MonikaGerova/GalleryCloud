@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wireframe Tools</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link href="http://bg.allfont.net/allfont.css?fonts=brushtype-normal" 
+	rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8" />
+</head>
+<body>
+
+
+<div id="box" class="blurred">
+	<div id="title">
+		<h1>Gallery</h1>
+	</div>
+	<div id="post-button">
+		POST
+	</div>
+
+	<div id="scrollbar">
+		<div id="content-background">
+
+		</div>
+
+		<div id="content">
+		</div>
+	</div>
+
+	<div id="moreAboutPhoto">
+		<div class="close-button" number="0" >X</div>
+		<div></div>
+	</div>
+
+	<div id="addPhoto-panel" >
+		<div class="close-button" number="1">X</div>
+		<div id="via">
+			<h3>Upload photo from: </h3>
+			<ul id="menu">
+				<!--<li id="url">URL</li>-->
+				<li id="pc">PC</li>
+				<li id="camera">Camera</li>
+			</ul>
+			<hr>
+			<!--<div id="url-box">BY URL</div>-->
+			<div id="pc-box">
+				<form method="post" enctype="multipart/form-data">
+						<input type="file" name="photo" class="photo"> <br>
+						<input type="submit" value="Upload">
+				</form>
+
+
+			</div>
+			<div id="camera-box">
+				<form method="post" enctype="multipart/form-data">
+					<label for="openCamera">Capture photo</label>
+					<input type="file" accept="image/*" capture="camera"  name="photo" class="photo" id="openCamera" style="display: none"/>
+					<input type="submit" value="Upload">
+				</form>
+			</div>
+			<div id="response"></div>
+			<div id="preview-box">
+				<img src="#" alt="preview" id="preview">
+			</div>
+		</div>
+	</div>
+</div>
+<script src="script.js" ></script>
+</body>
+</html>
