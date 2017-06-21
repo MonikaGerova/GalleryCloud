@@ -1,2 +1,0 @@
-# GalleryCloud
-mobile website
